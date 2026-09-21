@@ -1,0 +1,1124 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-09-21T16:45:39.681Z",
+  "comp": ".impeccable/mocks/comp-a.jpg",
+  "warnings": [],
+  "uncoveredInkCells": [],
+  "compSize": {
+    "width": 1280,
+    "height": 720
+  },
+  "aspect": 1.7778,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#2b3d4d",
+      "coverage": 0.3383
+    },
+    {
+      "hex": "#d9d0c3",
+      "coverage": 0.2329
+    },
+    {
+      "hex": "#656c78",
+      "coverage": 0.1583
+    },
+    {
+      "hex": "#435455",
+      "coverage": 0.1412
+    },
+    {
+      "hex": "#1b3030",
+      "coverage": 0.1292
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0694,
+      "strength": 0.2466
+    },
+    {
+      "y": 0.2083,
+      "strength": 0.2323
+    },
+    {
+      "y": 0.2778,
+      "strength": 0.2093
+    },
+    {
+      "y": 0.3056,
+      "strength": 0.3205
+    },
+    {
+      "y": 0.5417,
+      "strength": 0.236
+    },
+    {
+      "y": 0.6389,
+      "strength": 0.3335
+    },
+    {
+      "y": 0.6806,
+      "strength": 0.227
+    },
+    {
+      "y": 0.7639,
+      "strength": 0.2054
+    },
+    {
+      "y": 0.8056,
+      "strength": 0.322
+    },
+    {
+      "y": 0.8611,
+      "strength": 0.2033
+    },
+    {
+      "y": 0.8889,
+      "strength": 0.2486
+    },
+    {
+      "y": 0.9306,
+      "strength": 0.4508
+    }
+  ],
+  "regions": [
+    {
+      "id": "sea",
+      "kind": "texture",
+      "note": "Clean sample of dark blue-green ocean swell with white foam; tile for the full-bleed water wall.",
+      "grid": "J0:J0",
+      "box": {
+        "x": 0.9,
+        "y": 0,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 1152,
+        "y": 0,
+        "w": 128,
+        "h": 72
+      },
+      "aspect": 1.7778,
+      "palette": [
+        {
+          "hex": "#385162",
+          "coverage": 0.7306
+        },
+        {
+          "hex": "#152f3c",
+          "coverage": 0.2093
+        },
+        {
+          "hex": "#5f7088",
+          "coverage": 0.0378
+        },
+        {
+          "hex": "#283858",
+          "coverage": 0.0223
+        }
+      ],
+      "detail": {
+        "energy": 6.3162
+      },
+      "medium": "raster",
+      "plate": "assets/plates/sea.png",
+      "text": null
+    },
+    {
+      "id": "stamp",
+      "kind": "plate",
+      "note": "Distressed rectangular rubber stamp: HYDROSTEP, a small wave line, and existing boats.",
+      "grid": "A0:C2",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 384,
+        "h": 216
+      },
+      "aspect": 1.7778,
+      "palette": [
+        {
+          "hex": "#6a727e",
+          "coverage": 0.4539
+        },
+        {
+          "hex": "#96989a",
+          "coverage": 0.2106
+        },
+        {
+          "hex": "#424d56",
+          "coverage": 0.1627
+        },
+        {
+          "hex": "#dad0cb",
+          "coverage": 0.0989
+        },
+        {
+          "hex": "#212425",
+          "coverage": 0.0739
+        }
+      ],
+      "detail": {
+        "energy": 42.6556
+      },
+      "medium": "raster",
+      "plate": "assets/plates/stamp.png",
+      "text": null
+    },
+    {
+      "id": "polaroid-hs17",
+      "kind": "plate",
+      "note": "Instant-film Polaroid of a dark open boat, cream border, masking tape at the top; no model lettering.",
+      "grid": "D0:E3",
+      "snap": false,
+      "box": {
+        "x": 0.3,
+        "y": 0,
+        "w": 0.2,
+        "h": 0.4
+      },
+      "px": {
+        "x": 384,
+        "y": 0,
+        "w": 256,
+        "h": 288
+      },
+      "aspect": 0.8889,
+      "palette": [
+        {
+          "hex": "#505d67",
+          "coverage": 0.4695
+        },
+        {
+          "hex": "#dcd2c6",
+          "coverage": 0.2217
+        },
+        {
+          "hex": "#273841",
+          "coverage": 0.1359
+        },
+        {
+          "hex": "#8f9093",
+          "coverage": 0.1232
+        },
+        {
+          "hex": "#0b0c0d",
+          "coverage": 0.0497
+        }
+      ],
+      "detail": {
+        "energy": 31.8743
+      },
+      "medium": "raster",
+      "plate": "assets/plates/polaroid-hs17.png",
+      "text": null
+    },
+    {
+      "id": "label-hs17",
+      "kind": "text",
+      "note": "Handwritten model name HS-17 on the Polaroid border.",
+      "grid": "D3:E3",
+      "box": {
+        "x": 0.3,
+        "y": 0.3,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 384,
+        "y": 216,
+        "w": 256,
+        "h": 72
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#e2d6c6",
+          "coverage": 0.4934
+        },
+        {
+          "hex": "#404b53",
+          "coverage": 0.3778
+        },
+        {
+          "hex": "#7f8082",
+          "coverage": 0.0647
+        },
+        {
+          "hex": "#1a2a32",
+          "coverage": 0.0494
+        },
+        {
+          "hex": "#aea69f",
+          "coverage": 0.0148
+        }
+      ],
+      "detail": {
+        "energy": 29.9001
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-09-21T16:45:45.257Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "polaroid-hs20",
+      "kind": "plate",
+      "note": "Instant-film Polaroid of a silver cabin boat, cream border, tape at the top; no model lettering.",
+      "grid": "F0:G3",
+      "snap": false,
+      "box": {
+        "x": 0.5,
+        "y": 0,
+        "w": 0.2,
+        "h": 0.4
+      },
+      "px": {
+        "x": 640,
+        "y": 0,
+        "w": 256,
+        "h": 288
+      },
+      "aspect": 0.8889,
+      "palette": [
+        {
+          "hex": "#404d57",
+          "coverage": 0.5013
+        },
+        {
+          "hex": "#ddd3c4",
+          "coverage": 0.2369
+        },
+        {
+          "hex": "#ccb088",
+          "coverage": 0.1147
+        },
+        {
+          "hex": "#131617",
+          "coverage": 0.0761
+        },
+        {
+          "hex": "#a6a2a3",
+          "coverage": 0.071
+        }
+      ],
+      "detail": {
+        "energy": 29.7401
+      },
+      "medium": "raster",
+      "plate": "assets/plates/polaroid-hs20.png",
+      "text": null
+    },
+    {
+      "id": "label-hs20",
+      "kind": "text",
+      "note": "Handwritten model name HS-20 on the Polaroid border.",
+      "grid": "F2:G2",
+      "box": {
+        "x": 0.5,
+        "y": 0.2,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 640,
+        "y": 144,
+        "w": 256,
+        "h": 72
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#ddd4c5",
+          "coverage": 0.5246
+        },
+        {
+          "hex": "#2f3d3c",
+          "coverage": 0.1527
+        },
+        {
+          "hex": "#a6a3a6",
+          "coverage": 0.1384
+        },
+        {
+          "hex": "#2e3646",
+          "coverage": 0.0967
+        },
+        {
+          "hex": "#bc9f78",
+          "coverage": 0.0875
+        }
+      ],
+      "detail": {
+        "energy": 35.3958
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-09-21T16:45:45.279Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "polaroid-hs28",
+      "kind": "plate",
+      "note": "Instant-film Polaroid of a silver runabout, cream border, tape at the top; no model lettering.",
+      "grid": "H0:J4",
+      "snap": false,
+      "box": {
+        "x": 0.7,
+        "y": 0,
+        "w": 0.3,
+        "h": 0.5
+      },
+      "px": {
+        "x": 896,
+        "y": 0,
+        "w": 384,
+        "h": 360
+      },
+      "aspect": 1.0667,
+      "palette": [
+        {
+          "hex": "#2b404d",
+          "coverage": 0.5195
+        },
+        {
+          "hex": "#566672",
+          "coverage": 0.2255
+        },
+        {
+          "hex": "#d7cec1",
+          "coverage": 0.132
+        },
+        {
+          "hex": "#989a9e",
+          "coverage": 0.0917
+        },
+        {
+          "hex": "#0c0f12",
+          "coverage": 0.0312
+        }
+      ],
+      "detail": {
+        "energy": 32.1848
+      },
+      "medium": "raster",
+      "plate": "assets/plates/polaroid-hs28.png",
+      "text": null
+    },
+    {
+      "id": "label-hs28",
+      "kind": "text",
+      "note": "Handwritten model name HS-28 on the Polaroid border.",
+      "grid": "H3:I3",
+      "box": {
+        "x": 0.7,
+        "y": 0.3,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 896,
+        "y": 216,
+        "w": 256,
+        "h": 72
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#d9cfc0",
+          "coverage": 0.481
+        },
+        {
+          "hex": "#2a353b",
+          "coverage": 0.2338
+        },
+        {
+          "hex": "#9b9b9e",
+          "coverage": 0.1142
+        },
+        {
+          "hex": "#5f686f",
+          "coverage": 0.0984
+        },
+        {
+          "hex": "#0f1012",
+          "coverage": 0.0727
+        }
+      ],
+      "detail": {
+        "energy": 32.66
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 7,
+          "capHeightPx": 70.6,
+          "inkIsDark": true,
+          "allCaps": true,
+          "advance": 0.4394,
+          "advTall": 0.4394,
+          "advX": null,
+          "gap": 0.0496,
+          "xRatio": null,
+          "stemW": 0.0504,
+          "contrast": 1.172,
+          "serif": null,
+          "densTall": 0.4025,
+          "densX": null,
+          "weight": 0.4025
+        },
+        "widthClass": "compressed",
+        "weightClass": "regular",
+        "chosen": {
+          "family": "Smythe",
+          "weight": 400,
+          "fontSizePx": 101,
+          "source": "catalog",
+          "estimatedSize": true,
+          "stamp": "9847ae4b6b13"
+        }
+      }
+    },
+    {
+      "id": "polaroid-hs24",
+      "kind": "plate",
+      "note": "Large center instant-film Polaroid of a silver stepped-hull cabin boat, cream border, two tape pieces at the top; no model lettering.",
+      "grid": "E2:G7",
+      "snap": false,
+      "box": {
+        "x": 0.4,
+        "y": 0.2,
+        "w": 0.3,
+        "h": 0.6
+      },
+      "px": {
+        "x": 512,
+        "y": 144,
+        "w": 384,
+        "h": 432
+      },
+      "aspect": 0.8889,
+      "palette": [
+        {
+          "hex": "#dbd2c4",
+          "coverage": 0.3805
+        },
+        {
+          "hex": "#3b4750",
+          "coverage": 0.3162
+        },
+        {
+          "hex": "#1a2830",
+          "coverage": 0.128
+        },
+        {
+          "hex": "#666b6e",
+          "coverage": 0.0945
+        },
+        {
+          "hex": "#0d0e0e",
+          "coverage": 0.0809
+        }
+      ],
+      "detail": {
+        "energy": 35.0186
+      },
+      "medium": "raster",
+      "plate": "assets/plates/polaroid-hs24.png",
+      "text": null
+    },
+    {
+      "id": "label-hs24",
+      "kind": "text",
+      "note": "Large handwritten model name HS-24 on the Polaroid border.",
+      "grid": "E6:G7",
+      "box": {
+        "x": 0.4,
+        "y": 0.6,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "px": {
+        "x": 512,
+        "y": 432,
+        "w": 384,
+        "h": 144
+      },
+      "aspect": 2.6667,
+      "palette": [
+        {
+          "hex": "#ddd3c4",
+          "coverage": 0.5241
+        },
+        {
+          "hex": "#24343a",
+          "coverage": 0.3058
+        },
+        {
+          "hex": "#505961",
+          "coverage": 0.083
+        },
+        {
+          "hex": "#0f1316",
+          "coverage": 0.0677
+        },
+        {
+          "hex": "#7e7c7d",
+          "coverage": 0.0195
+        }
+      ],
+      "detail": {
+        "energy": 33.3555
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 5,
+          "capHeightPx": 45.5,
+          "inkIsDark": true,
+          "allCaps": true,
+          "advance": 3.8503,
+          "advTall": 3.8503,
+          "advX": null,
+          "gap": 0.4872,
+          "xRatio": null,
+          "stemW": 0.1544,
+          "contrast": 1.6925,
+          "serif": null,
+          "densTall": 0.7954,
+          "densX": null,
+          "weight": 0.7954
+        },
+        "widthClass": "wide",
+        "weightClass": "black",
+        "chosen": {
+          "family": "Sekuya",
+          "weight": 400,
+          "fontSizePx": 65,
+          "source": "catalog",
+          "estimatedSize": true,
+          "stamp": "07980808ffc4"
+        }
+      }
+    },
+    {
+      "id": "label-synthetic",
+      "kind": "text",
+      "note": "Small tracked SYNTHETIC label under HS-24.",
+      "grid": "F7:G7",
+      "box": {
+        "x": 0.5,
+        "y": 0.7,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 640,
+        "y": 504,
+        "w": 256,
+        "h": 72
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#dcd4c5",
+          "coverage": 0.5679
+        },
+        {
+          "hex": "#22353c",
+          "coverage": 0.3257
+        },
+        {
+          "hex": "#505e67",
+          "coverage": 0.0656
+        },
+        {
+          "hex": "#b1a69c",
+          "coverage": 0.0209
+        },
+        {
+          "hex": "#111318",
+          "coverage": 0.0198
+        }
+      ],
+      "detail": {
+        "energy": 28.068
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-09-21T16:45:45.405Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "polaroid-cc18",
+      "kind": "plate",
+      "note": "Instant-film Polaroid of a white center-console, cream border, tape at the top; no model lettering.",
+      "grid": "A3:C6",
+      "snap": false,
+      "box": {
+        "x": 0,
+        "y": 0.3,
+        "w": 0.3,
+        "h": 0.4
+      },
+      "px": {
+        "x": 0,
+        "y": 216,
+        "w": 384,
+        "h": 288
+      },
+      "aspect": 1.3333,
+      "palette": [
+        {
+          "hex": "#dad1c6",
+          "coverage": 0.2839
+        },
+        {
+          "hex": "#515a61",
+          "coverage": 0.2793
+        },
+        {
+          "hex": "#2d3b46",
+          "coverage": 0.2146
+        },
+        {
+          "hex": "#86888d",
+          "coverage": 0.1765
+        },
+        {
+          "hex": "#0c0d0e",
+          "coverage": 0.0456
+        }
+      ],
+      "detail": {
+        "energy": 42.8552
+      },
+      "medium": "raster",
+      "plate": "assets/plates/polaroid-cc18.png",
+      "text": null
+    },
+    {
+      "id": "label-cc18",
+      "kind": "text",
+      "note": "Handwritten model name CC-18 on the Polaroid border.",
+      "grid": "B6:C6",
+      "box": {
+        "x": 0.1,
+        "y": 0.6,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 128,
+        "y": 432,
+        "w": 256,
+        "h": 72
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#dfd5c6",
+          "coverage": 0.5852
+        },
+        {
+          "hex": "#323c41",
+          "coverage": 0.2133
+        },
+        {
+          "hex": "#5e6671",
+          "coverage": 0.0895
+        },
+        {
+          "hex": "#0d0f0f",
+          "coverage": 0.0757
+        },
+        {
+          "hex": "#858991",
+          "coverage": 0.0363
+        }
+      ],
+      "detail": {
+        "energy": 32.5562
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 5,
+          "capHeightPx": 50,
+          "inkIsDark": true,
+          "allCaps": true,
+          "advance": 0.26,
+          "advTall": 0.62,
+          "advX": null,
+          "gap": 0.2,
+          "xRatio": null,
+          "stemW": 0.0617,
+          "contrast": 0.5637,
+          "serif": null,
+          "densTall": 0.5265,
+          "densX": null,
+          "weight": 0.5265
+        },
+        "widthClass": "normal",
+        "weightClass": "medium",
+        "chosen": {
+          "family": "Chokokutai",
+          "weight": 400,
+          "fontSizePx": 71,
+          "source": "catalog",
+          "estimatedSize": true,
+          "stamp": "8c08f67d2915"
+        }
+      }
+    },
+    {
+      "id": "polaroid-hs22",
+      "kind": "plate",
+      "note": "Instant-film Polaroid of a dark cabin boat, cream border, tape at the top; no model lettering.",
+      "grid": "C5:F8",
+      "snap": false,
+      "box": {
+        "x": 0.2,
+        "y": 0.5,
+        "w": 0.4,
+        "h": 0.4
+      },
+      "px": {
+        "x": 256,
+        "y": 360,
+        "w": 512,
+        "h": 288
+      },
+      "aspect": 1.7778,
+      "palette": [
+        {
+          "hex": "#ddd4c6",
+          "coverage": 0.2987
+        },
+        {
+          "hex": "#23333b",
+          "coverage": 0.2727
+        },
+        {
+          "hex": "#4d575f",
+          "coverage": 0.2133
+        },
+        {
+          "hex": "#0b0d10",
+          "coverage": 0.1249
+        },
+        {
+          "hex": "#797c80",
+          "coverage": 0.0904
+        }
+      ],
+      "detail": {
+        "energy": 41.1467
+      },
+      "medium": "raster",
+      "plate": "assets/plates/polaroid-hs22.png",
+      "text": null
+    },
+    {
+      "id": "label-hs22",
+      "kind": "text",
+      "note": "Handwritten model name HS-22 on the Polaroid border.",
+      "grid": "D8:E9",
+      "box": {
+        "x": 0.3,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "px": {
+        "x": 384,
+        "y": 576,
+        "w": 256,
+        "h": 144
+      },
+      "aspect": 1.7778,
+      "palette": [
+        {
+          "hex": "#1e313a",
+          "coverage": 0.4436
+        },
+        {
+          "hex": "#ddd4c4",
+          "coverage": 0.2302
+        },
+        {
+          "hex": "#58626e",
+          "coverage": 0.1684
+        },
+        {
+          "hex": "#0b0e0f",
+          "coverage": 0.1083
+        },
+        {
+          "hex": "#8d8e93",
+          "coverage": 0.0495
+        }
+      ],
+      "detail": {
+        "energy": 32.4919
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 3,
+          "capHeightPx": 90,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5333,
+          "advTall": 0.5333,
+          "advX": null,
+          "gap": 0.0778,
+          "xRatio": 0.5444,
+          "stemW": 0.0736,
+          "contrast": 1.8988,
+          "serif": null,
+          "densTall": 0.3942,
+          "densX": null,
+          "weight": 0.3942
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular",
+        "chosen": {
+          "family": "Edu NSW ACT Foundation",
+          "weight": 400,
+          "fontSizePx": 129,
+          "source": "catalog",
+          "estimatedSize": true,
+          "stamp": "3de9f3ebc284"
+        }
+      }
+    },
+    {
+      "id": "polaroid-hs16",
+      "kind": "plate",
+      "note": "Instant-film Polaroid of a wooden runabout, cream border, tape at the top; no model lettering.",
+      "grid": "G6:I9",
+      "snap": false,
+      "box": {
+        "x": 0.6,
+        "y": 0.6,
+        "w": 0.3,
+        "h": 0.4
+      },
+      "px": {
+        "x": 768,
+        "y": 432,
+        "w": 384,
+        "h": 288
+      },
+      "aspect": 1.3333,
+      "palette": [
+        {
+          "hex": "#1e313a",
+          "coverage": 0.4475
+        },
+        {
+          "hex": "#d9cebf",
+          "coverage": 0.2352
+        },
+        {
+          "hex": "#59626c",
+          "coverage": 0.1913
+        },
+        {
+          "hex": "#0e0e0f",
+          "coverage": 0.071
+        },
+        {
+          "hex": "#93949b",
+          "coverage": 0.055
+        }
+      ],
+      "detail": {
+        "energy": 34.1888
+      },
+      "medium": "raster",
+      "plate": "assets/plates/polaroid-hs16.png",
+      "text": null
+    },
+    {
+      "id": "label-hs16",
+      "kind": "text",
+      "note": "Handwritten model name HS-16 on the Polaroid border.",
+      "grid": "H8:I9",
+      "box": {
+        "x": 0.7,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "px": {
+        "x": 896,
+        "y": 576,
+        "w": 256,
+        "h": 144
+      },
+      "aspect": 1.7778,
+      "palette": [
+        {
+          "hex": "#162a33",
+          "coverage": 0.4384
+        },
+        {
+          "hex": "#d8ccbc",
+          "coverage": 0.2891
+        },
+        {
+          "hex": "#43515d",
+          "coverage": 0.1758
+        },
+        {
+          "hex": "#0e110f",
+          "coverage": 0.0531
+        },
+        {
+          "hex": "#6a737b",
+          "coverage": 0.0436
+        }
+      ],
+      "detail": {
+        "energy": 28.5746
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-09-21T16:45:45.384Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "find-tab",
+      "kind": "control",
+      "note": "Cream paper tab labeled Find model with a play triangle; the finder control.",
+      "grid": "A8:C8",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 576,
+        "w": 384,
+        "h": 72
+      },
+      "aspect": 5.3333,
+      "palette": [
+        {
+          "hex": "#dfc9ad",
+          "coverage": 0.4617
+        },
+        {
+          "hex": "#21343c",
+          "coverage": 0.2195
+        },
+        {
+          "hex": "#bf9466",
+          "coverage": 0.1983
+        },
+        {
+          "hex": "#c8bfbc",
+          "coverage": 0.062
+        },
+        {
+          "hex": "#96918f",
+          "coverage": 0.0586
+        }
+      ],
+      "detail": {
+        "energy": 42.962
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "find-ruler",
+      "kind": "chrome",
+      "note": "Short kraft ruler under the Find model tab.",
+      "grid": "A9:B9",
+      "box": {
+        "x": 0,
+        "y": 0.9,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 648,
+        "w": 256,
+        "h": 72
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#122a35",
+          "coverage": 0.5822
+        },
+        {
+          "hex": "#c7a275",
+          "coverage": 0.2928
+        },
+        {
+          "hex": "#394b57",
+          "coverage": 0.0566
+        },
+        {
+          "hex": "#85694a",
+          "coverage": 0.0472
+        },
+        {
+          "hex": "#080812",
+          "coverage": 0.0212
+        }
+      ],
+      "detail": {
+        "energy": 17.5009
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    }
+  ]
+}

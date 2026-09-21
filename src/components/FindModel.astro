@@ -1,0 +1,33 @@
+---
+---
+
+<form class="find" method="get" action="/" data-find>
+  <label>
+    Find model
+    <input type="search" name="q" placeholder="HS-24" autocomplete="off" />
+    <svg class="go" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true">
+      <path fill="currentColor" d="M2 1.2 11 6 2 10.8z" />
+    </svg>
+  </label>
+  <div class="ruler" aria-hidden="true"></div>
+</form>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('[data-find]');
+  const input = form?.querySelector('input');
+  const prints = () => document.querySelectorAll<HTMLAnchorElement>('.polaroid');
+
+  const apply = () => {
+    const q = (input?.value ?? '').trim().toLowerCase();
+    prints().forEach((print) => {
+      const model = print.dataset.model?.toLowerCase() ?? '';
+      print.classList.toggle('is-dim', q.length > 0 && !model.includes(q));
+    });
+  };
+
+  input?.addEventListener('input', apply);
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    apply();
+  });
+</script>

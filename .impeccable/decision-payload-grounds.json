@@ -1,0 +1,54 @@
+{
+  "title": "Choose the Polaroid wall ground",
+  "question": "Workshop Polaroid Wall is the world. Which surface do the prints sit on?",
+  "followup": true,
+  "options": [
+    {
+      "id": "polaroid-cork",
+      "label": "Cork workshop wall",
+      "kicker": "ORIGINAL",
+      "lineage": "yard cork with taped instant film",
+      "thesis": "The prints live on a workshop cork wall — the original Polaroid library.",
+      "palette": ["#C4A574", "#F7F1E1", "#1A1A1A", "#6B3A2A"],
+      "materials": ["cork", "instant-film border", "masking tape"],
+      "viewport": "Cork filling the viewport; Polaroids taped on; Find model as a paper tab.",
+      "risk": "Reads as a generic mood-board if the cork is more present than the hulls.",
+      "comp": ".impeccable/mocks/decision/polaroid-cork.jpg"
+    },
+    {
+      "id": "polaroid-waves",
+      "label": "Open water",
+      "lineage": "live swell and wake",
+      "thesis": "The same Polaroid wall, pinned to moving waves so the fleet sits on the water it belongs to.",
+      "palette": ["#1B4F72", "#4A90A4", "#F7F1E1", "#1A1A1A"],
+      "materials": ["ocean swell", "white wake", "instant-film border"],
+      "viewport": "Full-bleed waves behind the same Polaroid set and Find model tab.",
+      "risk": "The water can fight the photos if the wake is busier than the hulls.",
+      "comp": ".impeccable/mocks/decision/polaroid-waves.jpg"
+    },
+    {
+      "id": "polaroid-pontoon",
+      "label": "Wet pontoon",
+      "lineage": "boat-show dock planks",
+      "thesis": "The prints are taped to wet teak pontoon boards — the ground you walk to meet a boat.",
+      "palette": ["#6B3A22", "#C4A574", "#F7F1E1", "#1A1A1A"],
+      "materials": ["wet teak", "dock seams", "instant-film border"],
+      "viewport": "Horizontal wet planks behind the same Polaroid set and Find model tab.",
+      "risk": "Reads as a tabletop collage if the wood is too furniture-like.",
+      "comp": ".impeccable/mocks/decision/polaroid-pontoon.jpg"
+    },
+    {
+      "id": "polaroid-hull",
+      "label": "Stepped hull",
+      "lineage": "close-up gelcoat and spray rail",
+      "thesis": "The wall is the HydroStep hull itself: Polaroids taped onto wet stepped gelcoat.",
+      "palette": ["#2A3036", "#8A9198", "#F7F1E1", "#1A1A1A"],
+      "materials": ["gelcoat", "spray-rail step", "water beads"],
+      "viewport": "A hard hull step running behind the same Polaroid set and Find model tab.",
+      "risk": "The metal/gelcoat can feel like a product-shot backdrop instead of a library.",
+      "comp": ".impeccable/mocks/decision/polaroid-hull.jpg"
+    }
+  ],
+  "buildPath": { "value": "comp", "toggle": true },
+  "steer": true
+}

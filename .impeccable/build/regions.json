@@ -1,0 +1,125 @@
+{
+  "regions": [
+    {
+      "id": "sea",
+      "kind": "texture",
+      "grid": "J0:J0",
+      "note": "Clean sample of dark blue-green ocean swell with white foam; tile for the full-bleed water wall."
+    },
+    {
+      "id": "stamp",
+      "kind": "plate",
+      "grid": "A0:C2",
+      "note": "Distressed rectangular rubber stamp: HYDROSTEP, a small wave line, and existing boats."
+    },
+    {
+      "id": "polaroid-hs17",
+      "kind": "plate",
+      "grid": "D0:E3",
+      "snap": false,
+      "note": "Instant-film Polaroid of a dark open boat, cream border, masking tape at the top; no model lettering."
+    },
+    {
+      "id": "label-hs17",
+      "kind": "text",
+      "grid": "D3:E3",
+      "note": "Handwritten model name HS-17 on the Polaroid border."
+    },
+    {
+      "id": "polaroid-hs20",
+      "kind": "plate",
+      "grid": "F0:G3",
+      "snap": false,
+      "note": "Instant-film Polaroid of a silver cabin boat, cream border, tape at the top; no model lettering."
+    },
+    {
+      "id": "label-hs20",
+      "kind": "text",
+      "grid": "F2:G2",
+      "note": "Handwritten model name HS-20 on the Polaroid border."
+    },
+    {
+      "id": "polaroid-hs28",
+      "kind": "plate",
+      "grid": "H0:J4",
+      "snap": false,
+      "note": "Instant-film Polaroid of a silver runabout, cream border, tape at the top; no model lettering."
+    },
+    {
+      "id": "label-hs28",
+      "kind": "text",
+      "grid": "H3:I3",
+      "note": "Handwritten model name HS-28 on the Polaroid border."
+    },
+    {
+      "id": "polaroid-hs24",
+      "kind": "plate",
+      "grid": "E2:G7",
+      "snap": false,
+      "note": "Large center instant-film Polaroid of a silver stepped-hull cabin boat, cream border, two tape pieces at the top; no model lettering."
+    },
+    {
+      "id": "label-hs24",
+      "kind": "text",
+      "grid": "E6:G7",
+      "note": "Large handwritten model name HS-24 on the Polaroid border."
+    },
+    {
+      "id": "label-synthetic",
+      "kind": "text",
+      "grid": "F7:G7",
+      "note": "Small tracked SYNTHETIC label under HS-24."
+    },
+    {
+      "id": "polaroid-cc18",
+      "kind": "plate",
+      "grid": "A3:C6",
+      "snap": false,
+      "note": "Instant-film Polaroid of a white center-console, cream border, tape at the top; no model lettering."
+    },
+    {
+      "id": "label-cc18",
+      "kind": "text",
+      "grid": "B6:C6",
+      "note": "Handwritten model name CC-18 on the Polaroid border."
+    },
+    {
+      "id": "polaroid-hs22",
+      "kind": "plate",
+      "grid": "C5:F8",
+      "snap": false,
+      "note": "Instant-film Polaroid of a dark cabin boat, cream border, tape at the top; no model lettering."
+    },
+    {
+      "id": "label-hs22",
+      "kind": "text",
+      "grid": "D8:E9",
+      "note": "Handwritten model name HS-22 on the Polaroid border."
+    },
+    {
+      "id": "polaroid-hs16",
+      "kind": "plate",
+      "grid": "G6:I9",
+      "snap": false,
+      "note": "Instant-film Polaroid of a wooden runabout, cream border, tape at the top; no model lettering."
+    },
+    {
+      "id": "label-hs16",
+      "kind": "text",
+      "grid": "H8:I9",
+      "note": "Handwritten model name HS-16 on the Polaroid border."
+    },
+    {
+      "id": "find-tab",
+      "kind": "control",
+      "grid": "A8:C8",
+      "note": "Cream paper tab labeled Find model with a play triangle; the finder control."
+    },
+    {
+      "id": "find-ruler",
+      "kind": "chrome",
+      "grid": "A9:B9",
+      "note": "Short kraft ruler under the Find model tab."
+    }
+  ]
+}

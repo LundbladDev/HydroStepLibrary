@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Library from '../layouts/Library.astro';
+import Polaroid from '../components/Polaroid.astro';
+import FindModel from '../components/FindModel.astro';
+import stamp from '../assets/stamp.png';
+
+const boats = (await getCollection('boats')).sort(
+  (a, b) => Number(Boolean(b.data.wall.featured)) - Number(Boolean(a.data.wall.featured)),
+);
+---
+
+<Library title="HydroStep — existing boats">
+  <main class="wall">
+    <header class="wall-head">
+      <a class="stamp" href="/" aria-label="HydroStep existing boats">
+        <Image src={stamp} alt="HydroStep existing boats" widths={[280, 420]} sizes="12rem" />
+      </a>
+      <FindModel />
+    </header>
+
+    <section class="fleet" aria-label="Existing boats">
+      {
+        boats.map((boat) => {
+          const slug = boat.id.replace(/\/index$/, '');
+          return (
+            <Polaroid
+              slug={slug}
+              model={boat.data.model}
+              cover={boat.data.cover}
+              featured={boat.data.wall.featured}
+            />
+          );
+        })
+      }
+    </section>
+  </main>
+</Library>

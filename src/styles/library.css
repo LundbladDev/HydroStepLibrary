@@ -1,0 +1,292 @@
+:root {
+  --sea-deep: #1b3030;
+  --sea-mid: #2b3d4d;
+  --foam: #d9d0c3;
+  --ink: #0d0d0d;
+  --paper: #f4ead6;
+  --kraft: #c7a275;
+  --tab: #dfc9ad;
+  --focus: #f2d000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+html {
+  background: var(--sea-deep);
+}
+
+body {
+  color: var(--foam);
+  font-family: "Edu NSW ACT Foundation", "Segoe Print", "Bradley Hand", cursive;
+  font-weight: 400;
+  background-color: var(--sea-deep);
+  background-image: var(--sea-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100dvh;
+}
+
+::selection {
+  background: var(--focus);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 4px;
+}
+
+a {
+  color: inherit;
+}
+
+.wall {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+  padding: clamp(1.2rem, 3vw, 2.5rem);
+  min-height: 100dvh;
+}
+
+.wall-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem 2rem;
+}
+
+.stamp {
+  width: min(14rem, 70vw);
+  flex: 0 1 auto;
+  filter: drop-shadow(2px 3px 6px rgb(0 0 0 / 0.45));
+}
+
+.stamp img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #f7f1e1;
+}
+
+.fleet,
+.gallery-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.75rem), 1fr));
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.polaroid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  color: var(--ink);
+  text-decoration: none;
+  background: #f3ead8;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 4px 10px 18px rgb(0 0 0 / 0.35);
+  transition: box-shadow 220ms cubic-bezier(0.16, 1, 0.3, 1), translate 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.polaroid:hover,
+.polaroid:focus-visible {
+  translate: 0 -6px;
+  box-shadow: 6px 16px 24px rgb(0 0 0 / 0.4);
+}
+
+.polaroid.is-dim {
+  opacity: 0.28;
+  filter: grayscale(0.4);
+  pointer-events: none;
+}
+
+.polaroid .window {
+  display: block;
+  margin: 0.9rem 0.9rem 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--sea-mid);
+}
+
+.polaroid .window img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.polaroid .model {
+  margin: 0;
+  padding: 0.85rem 0.7rem 1rem;
+  text-align: center;
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.find {
+  display: grid;
+  gap: 0.35rem;
+  width: min(22rem, 100%);
+}
+
+.find label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.7rem 1rem 0.7rem 1.1rem;
+  background: var(--tab);
+  color: var(--ink);
+  box-shadow: 3px 5px 0 rgb(0 0 0 / 0.25);
+  transform: rotate(-2deg);
+}
+
+.find .go {
+  flex: 0 0 auto;
+}
+
+.find input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 1.35rem;
+  color: var(--ink);
+  caret-color: var(--ink);
+}
+
+.find input::placeholder {
+  color: rgb(13 13 13 / 0.55);
+}
+
+.find .go {
+  font-size: 1.2rem;
+}
+
+.ruler {
+  height: 0.7rem;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--kraft) 0 2px,
+      #e6d3b3 2px 12px
+    );
+  box-shadow: 2px 3px 0 rgb(0 0 0 / 0.2);
+  transform: rotate(-1.5deg);
+}
+
+.dossier {
+  min-height: 100dvh;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+.back {
+  position: absolute;
+  left: 2.4%;
+  top: 4%;
+  z-index: 9;
+  padding: 0.55rem 1rem;
+  background: var(--tab);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: 3px 5px 0 rgb(0 0 0 / 0.25);
+  transform: rotate(-2deg);
+}
+
+.dummy-stamp {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.7rem;
+  border: 2px solid #c0392b;
+  color: #c0392b;
+  background: rgb(244 234 214 / 0.92);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.95rem;
+  transform: rotate(-3deg);
+}
+
+.hero-print {
+  width: min(100%, 28rem);
+  margin: 4.5rem auto 0;
+}
+
+.facts {
+  margin-top: 5.5rem;
+  padding: 1.4rem 1.5rem 1.6rem;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 6px 10px 0 rgb(0 0 0 / 0.28);
+  transform: rotate(1.2deg);
+}
+
+.facts dl {
+  margin: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.facts dt {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(13 13 13 / 0.72);
+}
+
+.facts dd {
+  margin: 0.15rem 0 0;
+  font-size: 1.55rem;
+}
+
+.gallery {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+}
+
+.gallery h2 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.empty-gallery {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  background: rgb(244 234 214 / 0.9);
+  color: var(--ink);
+}
+
+@media (max-width: 800px) {
+  .dossier {
+    grid-template-columns: 1fr;
+    padding-top: 5rem;
+  }
+
+  .facts,
+  .hero-print {
+    margin-top: 0;
+  }
+}

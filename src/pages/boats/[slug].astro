@@ -1,0 +1,81 @@
+---
+import { getCollection } from 'astro:content';
+import type { ImageMetadata } from 'astro';
+import Library from '../../layouts/Library.astro';
+import Polaroid from '../../components/Polaroid.astro';
+
+export async function getStaticPaths() {
+  const boats = await getCollection('boats');
+  return boats.map((boat) => ({
+    params: { slug: boat.id.replace(/\/index$/, '') },
+  }));
+}
+
+const slug = Astro.params.slug!;
+const boats = await getCollection('boats');
+const boat = boats.find((entry) => entry.id.replace(/\/index$/, '') === slug);
+if (!boat) {
+  throw new Error(`Missing boat ${slug}`);
+}
+
+const galleryGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/content/boats/*/photos/*.{png,jpg,jpeg,webp}',
+  { eager: true },
+);
+const gallery = Object.entries(galleryGlob)
+  .filter(([path]) => path.includes(`/boats/${slug}/photos/`))
+  .map(([, mod]) => mod.default);
+---
+
+<Library title={`${boat.data.model} — HydroStep`}>
+  <a class="back" href={`/?boat=${slug}`}>Back to the wall</a>
+  <main class="dossier">
+    <div class="hero-print">
+      <Polaroid slug={slug} model={boat.data.model} cover={boat.data.cover} href={null} />
+    </div>
+
+    <section class="facts" aria-labelledby="facts-title">
+      <p class="dummy-stamp">Dummy text — not real HydroStep records</p>
+      <h1 id="facts-title">{boat.data.model}</h1>
+      <dl>
+        <div>
+          <dt>Owner</dt>
+          <dd>{boat.data.owner}</dd>
+        </div>
+        <div>
+          <dt>Year</dt>
+          <dd>{boat.data.year}</dd>
+        </div>
+        <div>
+          <dt>Location</dt>
+          <dd>{boat.data.location}</dd>
+        </div>
+        <div>
+          <dt>Note</dt>
+          <dd>{boat.data.note}</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Photo library</h2>
+      <p class="dummy-stamp">Dummy photos — replace files in this boat’s photos folder</p>
+      {
+        gallery.length > 0 ? (
+          <div class="gallery-row">
+            {gallery.map((photo, index) => (
+              <Polaroid
+                slug={`${slug}-photo-${index}`}
+                model={boat.data.model}
+                cover={photo}
+                href={photo.src}
+              />
+            ))}
+          </div>
+        ) : (
+          <p class="empty-gallery">No extra photos yet. Drop images into src/content/boats/{slug}/photos/.</p>
+        )
+      }
+    </section>
+  </main>
+</Library>
