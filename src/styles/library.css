@@ -261,6 +261,24 @@ a {
   font-size: 1.55rem;
 }
 
+.facts h1 {
+  margin: 0 0 1rem;
+}
+
+.story {
+  margin-top: 1.1rem;
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.story :first-child {
+  margin-top: 0;
+}
+
+.story :last-child {
+  margin-bottom: 0;
+}
+
 .gallery {
   grid-column: 1 / -1;
   margin-top: 0.5rem;

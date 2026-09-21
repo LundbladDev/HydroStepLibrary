@@ -7,7 +7,7 @@ import FindModel from '../components/FindModel.astro';
 import stamp from '../assets/stamp.png';
 
 const boats = (await getCollection('boats')).sort(
-  (a, b) => Number(Boolean(b.data.wall.featured)) - Number(Boolean(a.data.wall.featured)),
+  (a, b) => Number(b.data.featured) - Number(a.data.featured),
 );
 ---
 
@@ -29,7 +29,7 @@ const boats = (await getCollection('boats')).sort(
               slug={slug}
               model={boat.data.model}
               cover={boat.data.cover}
-              featured={boat.data.wall.featured}
+              featured={boat.data.featured}
             />
           );
         })
