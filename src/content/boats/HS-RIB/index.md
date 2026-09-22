@@ -1,9 +1,10 @@
 ---
-model: "HS-28"
+model: "HydroStep RIB"
 cover: "./cover.png"
 dummy: true
-owner: "Dummy owner"
+featured: true
+owner: "Mikael Lundblad"
 year: "Dummy year — 2019"
-location: "Dummy location — west coast"
+location: "Gävlebukten"
 note: "Dummy note — placeholder copy until this boat’s real facts are added."
 ---

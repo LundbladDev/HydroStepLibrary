@@ -1,7 +1,7 @@
 ---
-model: "CC-18"
-cover: "./cover.png"
-dummy: true
+model: "HydroStep 696"
+cover: "./HS-696-Hugo-cover.jpg"
+dummy: false
 owner: "Dummy owner"
 year: "Dummy year — 2019"
 location: "Dummy location — west coast"

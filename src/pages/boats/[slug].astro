@@ -34,8 +34,9 @@ const galleryGlob = import.meta.glob<{ default: ImageMetadata }>(
   '/src/content/boats/*/photos/*.{png,jpg,jpeg,webp}',
   { eager: true },
 );
+const galleryFolder = `/boats/${slug}/photos/`.toLowerCase();
 const gallery = Object.entries(galleryGlob)
-  .filter(([path]) => path.includes(`/boats/${slug}/photos/`))
+  .filter(([path]) => path.toLowerCase().includes(galleryFolder))
   .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
   .map(([path, mod]) => {
     const file = path.split('/').pop() ?? '';
