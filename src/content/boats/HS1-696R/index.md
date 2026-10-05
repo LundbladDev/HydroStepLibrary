@@ -1,6 +1,6 @@
 ---
 model: "HydroStep 696R"
-cover: "./HS-696R-cover.jpg"
+cover: "./HS1-696R-cover.jpg"
 dummy: false
 owner: "Mikael Lundblad"
 year: "Dummy year — 2019"

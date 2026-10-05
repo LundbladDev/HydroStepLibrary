@@ -1,6 +1,6 @@
 ---
 model: "HS-22"
-cover: "./cover.png"
+cover: "./HS2-696S-cover.png"
 dummy: true
 owner: "Dummy owner"
 year: "Dummy year — 2019"
