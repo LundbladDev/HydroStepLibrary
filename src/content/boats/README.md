@@ -35,6 +35,7 @@ dummy: true             # true until this record is real
 featured: false         # true = this print sorts first on the wall
 owner: ""
 year: ""
+engine: ""
 location: ""
 note: ""
 captions:

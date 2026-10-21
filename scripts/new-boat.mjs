@@ -27,6 +27,7 @@ dummy: true
 featured: false
 owner: ""
 year: ""
+engine: ""
 location: ""
 note: ""
 ---

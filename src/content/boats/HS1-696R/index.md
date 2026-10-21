@@ -4,6 +4,7 @@ cover: "./HS1-696R-cover.jpg"
 dummy: false
 owner: "Mikael Lundblad"
 year: "Dummy year — 2019"
+engine: "Dummy engine"
 location: "Gävlebukten"
 note: "Denna båt är raceriggad för klass 3A. "
 ---

@@ -14,6 +14,7 @@ const boats = defineCollection({
       featured: z.boolean().default(false),
       owner: z.string().optional(),
       year: z.string().optional(),
+      engine: z.string().optional(),
       location: z.string().optional(),
       note: z.string().optional(),
       captions: z.record(z.string(), z.string()).optional(),
